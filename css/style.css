@@ -1,0 +1,128 @@
+/* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+body {
+  background-color: #6459cd;
+}
+.container {
+  margin: 0;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.configuration {
+  height: 200px;
+  background: #3148ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#invader {
+  display: flex;
+  justify-content: center;
+}
+
+#pixelContainer {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+#pixelsElement {
+  height: 15px;
+  width: 15px;
+  border: 2px solid rgb(161, 159, 159);
+  background-color: white;
+}
+
+.input-field,
+.btn {
+  padding: 15px;
+  height: 60px;
+  text-align: center;
+  border: none;
+  margin-right: 3px;
+  font-size: 1.2em;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-field::placeholder {
+  font-size: 0.73rem;
+}
+
+.input-field:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.btn {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: white;
+  background-color: #9b68e4;
+  height: 90px;
+  cursor: pointer;
+}
+
+.colorPalet {
+  height: 70px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.226);
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.color {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* .footer {
+  color: white;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 30px;
+} */
+
+@media screen and (max-width: 700px) {
+  .configuration {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-bottom: 20px;
+    height: 15px;
+    text-align: center;
+    border: none;
+    font-size: 1em;
+    border-radius: 8px;
+  }
+
+  .input-field::placeholder {
+    font-size: 0.5rem;
+  }
+  .input-field:nth-child(1) {
+    margin-top: 8px;
+  }
+  .btn {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 1em;
+    width: 220px;
+    border-radius: 8px;
+  }
+}
